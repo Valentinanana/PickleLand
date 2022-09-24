@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --primary-color:#2B5913;
+}
+
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+body {
+    font-family: "lato", sans-serif;
+    color:#333;
+    line-height: 1.6;
+    background-color: #DCF8CE;
+    
+}
+ul {
+    list-style: none;
+}
+a {text-decoration: none;
+    color:#333
+
+}
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin:10px 0;
+}
+p {
+    margin:10px 0;
+
+}
+img{
+    width:100%;
+}
+/* Navbar */
+.navbar { 
+ background-color: var(--primary-color);
+ color:#fff;
+ height: 70px;
+}
+.navbar ul {
+    display: flex;
+    
+
+}
+.navbar a {
+    color:#fff;
+    padding: 10px;
+    margin: 0 5px;
+
+}
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+.navbar .flex {
+    justify-content: space-between;
+
+}
+/* Showcase */
+.showcase {
+    height:400px;
+    background-color: var(--primary-color);
+    color:#fff;
+    position: relative;
+    
+    
+    
+
+}
+
+
+
+.showcase h1 {
+    font-size: 40px;
+    
+    
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+.showcase .grid {
+    grid-template-columns: 45%, 55%;
+    gap:30px;
+    overflow: visible;
+}
+.showcase-form{
+    position:relative;
+    top:60px;
+    height:350px;
+    width:400px;
+    padding: 40px;
+    z-index:100;
+    
+}
+.showcase-form .form-control {
+    margin:30px 0;
+
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    border:0;
+    border-bottom: 1px solid #73A15B;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+  
+}
+.showcase-form input:focus{
+    outline: none;
+}
+.showcase::before,
+.showcase::after {
+    content: "";
+    position:absolute;
+    height: 100px;
+    bottom:-70px;
+    right:0;
+    left:0;
+    background-color: #DCF8CE;
+    transform: skewY(-3deg);
+}
+/* Stats */
+.stats{
+padding-top:100px;
+}
+.stats .grid h3{
+    font-size: 20px;
+}
+.text-secondary {
+    font-size:20px;
+    font-weight: bold;
+    
+}
+    
+/* Pickle-picture */
+.Pickle-picture .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2,1fr) ;  
+}
+.Pickle-picture .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 2;}
+.Pickle-picture img{
+    width: 70%;
+   
+
+}
+/* Pickle-docs */
+.Pickle-docs img{
+    width:50%;
+}
+.Pickle-docs .grid{
+    grid-template-columns: 4fr 3fr;
+}
+.btn-dark {
+    background-color: #76A55D;
+    display:inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+}
+.lg{
+    font-size: 3rem;
+}
+/* Pickle Gallery */
+
+.gallery {
+    width: 10rem;
+    transition: transform 0.2s ease-in;
+    
+        
+        
+    
+
+}
+.gallery:hover{
+    transform: translateY(-15px) ;
+}
+/* Footer */
+.footer{
+    background: url(IMG_3723.JPG) no-repeat center/cover;
+    color: aliceblue;
+
+}
+.footer a{
+    color: aliceblue;
+    display: inline-block;
+}
+/* Features page */
+.features-head img:first-child{
+    width:200px;
+    
+}
+.features-head img{
+    justify-self: flex-end;
+    
+    
+}
+.features-subhead {
+    background: url(IMG_3728.JPG) no-repeat center/cover;
+    
+}
+.features-subhead li{
+    list-style: disc;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Docs page */
+.docs{
+    background-color: #76A55D;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin:30px auto;
+    padding: 20px;
+   
+}
+.docs .grid  .card{
+    height: calc(100vh/1.5);
+    overflow: hidden;
+    transition: box-shadow .3s;
+    
+    
+    
+}
+.docs .grid  .card:hover{
+    box-shadow: 0 0 11px black;
+}   
+   
+.docs .grid  .card img {
+    width: 70%;
+    margin:auto;
+    display: block;
+    
+    
+
+    
+    
+    
+    
+
+}   
+
+    
+   
+    
+    
+
+
+
+
+
+
+/* Utilities  */
+.container {
+    max-width: 1100px;
+    margin:0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
+    padding: 20px;
+    margin:10px;
+    color:#333;
+    
+    
+
+
+}
+.btn{
+    display:inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+.text-center {
+    text-align: center;
+}
+.bg-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+    
+}
+.shadow{
+    text-shadow: 0.5px 0.5px 2px #333;
+}
+
+/*  margin */
+.my-1{
+    margin: 1rem 0;}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+.m-1{
+    margin: 1rem;}
+.m-2{
+    margin: 1.5rem ;
+}
+.m-3{
+    margin: 2rem ;
+}
+.m-4{
+    margin: 3rem ;
+}
+.m-5{
+    margin: 4rem ;
+}
+/* Padding */
+.py-1{
+    padding: 1rem 0;}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+.p-1{
+    padding: 1rem;}
+.p-2{
+    padding: 1.5rem ;
+}
+.p-3{
+    padding: 2rem ;
+}
+.p-4{
+    padding: 3rem ;
+}
+.p-5{
+    padding: 4rem ;
+}
+.flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.grid {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap:16px;
+    
+    padding:10px;
+   
+   
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.grid-3{
+   grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Mobile abd tablets */
+@media(max-width: 800px) {
+    .showcase{
+       height: auto;}
+    .navbar .flex {
+        flex-direction: column;
+        
+    }
+    .navbar{
+        height: auto;
+    }
+    .showcase .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        
+    }
+    .showcase-text{ 
+        padding:20px;
+        text-align: center;
+        
+    }
+    .showcase .card{
+        justify-self: center;
+        margin: auto;
+    }
+    
+    .features-head .grid{
+        grid-template-columns: 1fr;
+       
+
+    
+
+    }
+}
